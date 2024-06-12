@@ -164,28 +164,40 @@
 
 // - თამაშის დროს ისეთი input-ები, რომელიც არ იქნება რიცხვის ტიპის, გამოცნობის არასწორ მცდელობებად ჩათვალეთ.
 
-function guessTheNumbers(){
-    let maxNumber = 10;
-    let guessumber = Math.floor(Math.random() * maxNumber) + 1
+// function guessTheNumbers(){
+// while(true){
+//     let level = Number(prompt('enter level 1,2,3'))
+//     let maxNumber
+//     if(level === 1){
+//         maxNumber = 10
+//     }else if(level === 2){
+//         maxNumber = 100
+//     }else if(level === 3){
+//         maxNumber = 1000
+//     }else{
+//         console.log('enter 1, 2 or 3 ')
+//         continue
+//     }
+//     let guessNumber = Math.floor(Math.random() * maxNumber) + 1
+//     console.log(`unda gamoicno  1dan   ${maxNumber}-mde`);
+//     let userNumber;
+//     while(true){
+//         userNumber = Number(prompt(`Enter your guess (1 to ${maxNumber}):`));
+//         if(userNumber < guessNumber){
+//             console.log('naklebia,scade tavidan')
+//         }else if(userNumber > guessNumber){
+//             console.log('metia tavidan scade')
+//         }else{
+//             console.log(`shen gamoicani ${guessNumber} kochag`)
+//             break;
+//         }
+//     }
+//     break; 
 
-    while(true){
-       
-        let userNumber = Number(prompt(`Enter your guess (1 to ${maxNumber}):`));
+// }
+// }
 
-        if(userNumber < guessumber ){
-            console.log('it is low,try again!')
-            
-        }else if(userNumber > guessumber ){
-            console.log('it is more,try again!')
-            
-        }else{
-            console.log(`you guessed guessNumber ${guessumber}`);
-             
-        }
-    }
-}
-
-guessTheNumbers()
+// guessTheNumbers()
 
 
 
