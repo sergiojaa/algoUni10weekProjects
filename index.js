@@ -28,10 +28,10 @@
 // > Plate: BTCMP0
 // > Invalid
 // ```
-// let number = ['a000']
+// let number = ['ase000']
 // if(!(typeof number[0] === 'string') || !(typeof number[1] === 'String') ){
 //     console.log('sanomre nishani unda iwkebodes minimum ori asoti')
-// }else if(!(number.length < 8) ||  ){
+// }else if(!(number.length < 8)){
 //     console.log('kodi mshvenieria')
 // }
 
