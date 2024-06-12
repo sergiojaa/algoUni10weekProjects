@@ -149,7 +149,6 @@
 //  ასევე უნდა აკონტროლოს გამოცნობის მცდელობების რაოდენობა. როგორც კი მოთამაშე გამოიცნობს სწორ რიცხვს,
 //   კომპიუტერმა უნდა დაბეჭდოს, თუ რამდენი მცდელობა დასჭირდა მას სწორ პასუხამდე მისასვლელად და ჰკითხოს,
 //    სურს თუ არა ხელახლა თამაში.
-
 // მაგალითად:
 
 // ```shell
@@ -165,24 +164,39 @@
 
 // - თამაშის დროს ისეთი input-ები, რომელიც არ იქნება რიცხვის ტიპის, გამოცნობის არასწორ მცდელობებად ჩათვალეთ.
 
+function guessTheNumbers(){
+    let maxNumber = 10;
+    let guessumber = Math.floor(Math.random() * maxNumber) + 1
 
-// if(question1 > firstLevelNumber ){
-//     console.log('cifri metia')
-// }else if(question1 < firstLevelNumber){
-//     console.log('cifri naklebia')
-// }else{
-//     console.log('kochag')
+    while(true){
+       
+        let userNumber = Number(prompt(`Enter your guess (1 to ${maxNumber}):`));
+
+        if(userNumber < guessumber ){
+            console.log('it is low,try again!')
+            
+        }else if(userNumber > guessumber ){
+            console.log('it is more,try again!')
+            
+        }else{
+            console.log(`you guessed guessNumber ${guessumber}`);
+             
+        }
+    }
+}
+
+guessTheNumbers()
+
+
+
+
+
+
+
+// if(level1 === 2){
+
 // }
-// function calculate(){
-//     let level = Number(prompt('enter the level 1,2,3'))
-//     let firstLevelNumber = Math.floor(Math.random * 10) + 1
-//     let userNumber = Number(prompt('enter the number'))
-//    if(level === 1){
-//     while(userNumber !== firstLevelNumber){
-//         console.log('araswori ricxvi')
-//     }
-//    }
-//    return 'kochag'
+// if(level1 === 3){
 
 // }
 
