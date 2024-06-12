@@ -28,12 +28,31 @@
 // > Plate: BTCMP0
 // > Invalid
 // ```
-// let number = ['ase000']
-// if(!(typeof number[0] === 'string') || !(typeof number[1] === 'String') ){
-//     console.log('sanomre nishani unda iwkebodes minimum ori asoti')
-// }else if(!(number.length < 8)){
-//     console.log('kodi mshvenieria')
+// chatgpt davixmare regular expressionebze. bevrad amartivebs :)))))
+// function putNumber(){
+//     let code = prompt('Enter code:');
+//     const isLetter = /^[a-zA-Z]$/;
+//     const isValidCode = /^[a-zA-Z]{2,6}\d*$/
+//     if (!isLetter.test(code[0]) || !isLetter.test(code[1])) {
+//         return 'pirveli da meore chanaweri unda ikos asoebi';
+//     }
+//     if (code.length < 2 || code.length > 6) {
+//         return 'kodi 2-is da 6is raodenobas shoris unda ikos.';
+//     }
+//     if (!isValidCode.test(code)) {
+//         return 'nomrebi shuashi ar unda ikos gamokenebuli.gchasvit boloshi';
+//     }
+//     const firstNumberIndex = code.search(/\d/);
+//     if (firstNumberIndex !== -1 && code[firstNumberIndex] === '0') {
+//         return 'The first number used cannot be "0".';
+//     }
+//     const hasInvalidChars = /[^\w]/;
+//     if (hasInvalidChars.test(code)) {
+//         return 'Dots, spaces, and punctuation marks are not allowed.';
+//     }
+//     return `kodi ${code} validuria`
 // }
+// console.log(putNumber())
 
 // ### პროექტი 50 - Handling Bad Input - ცუდი Input-ის მართვა
 
