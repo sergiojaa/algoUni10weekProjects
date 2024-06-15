@@ -136,8 +136,8 @@
 // $ 95% | 191 bpm
 // ```
 
-// - ხელით არ დაწეროთ პროცენტები, გამოიყენეთ ციკლი და გაზარდეთ 5 პროცენტით 55-95 მნიშვნელობები.
-// - გააკეთეთ ვალიდაცია, არ მისცეთ მომხმარებელს საშუალება რომ შეიყვანოს input-ში რიცხვების გარდა სხვა სიმბოლოები.
+    // - ხელით არ დაწეროთ პროცენტები, გამოიყენეთ ციკლი და გაზარდეთ 5 პროცენტით 55-95 მნიშვნელობები.
+    // - გააკეთეთ ვალიდაცია, არ მისცეთ მომხმარებელს საშუალება რომ შეიყვანოს input-ში რიცხვების გარდა სხვა სიმბოლოები.
 
 // ### პროექტი 53 - Guess The Number Game - თამაში რიცხვის გამოცნობაზე
 
@@ -201,17 +201,6 @@
 
 
 
-
-
-
-
-// if(level1 === 2){
-
-// }
-// if(level1 === 3){
-
-// }
-
 // ### პროექტი 54 - Magic 8 Ball
 
 // შექმენით Magic 8 Ball თამაშის პროგრამა, რომელიც მოთხოვს მომხმარებელს რაიმე კითხვის შეყვანას
@@ -225,6 +214,18 @@
 // ```
 // - შემთხვევითობის პრინციპით დასადგენად, გამოიყნეთ შესაბამისი ბიბლიოთეკა.
 // - გააკეთეთ input-ის ვალიდაცია და დაყავით კოდი ფუნქციებად.
+// const question = prompt('ask what U want')
+
+// function randomAnswers(){
+
+//     const arrAnswers = ['yes','no','ask again later']
+//     const randomAnswer = Math.floor(Math.random() * arrAnswers.length)
+//     return arrAnswers[randomAnswer]
+// }
+// console.log(`the question is: ${question} - the answer is: ${randomAnswers()}`)
+
+// console.log(`${question} ${randomAnswer}`)
+
 
 // ### პროექტი 55 - Picking a Winner - გამარჯვებულის არჩევა
 
@@ -244,12 +245,20 @@
 // $ Enter a name:
 // $ The winner is... Maggie.
 // ```
-// let name = prompt('Enter the name');
-// while (name.length > 0) {
-//     name = prompt('Enter the name');
-// }
+// let names = [];
+// let name = prompt('chawere saxeli an daachire enters');
 
-// console.log('Winner');
+// while (name !== '') {
+//     names.push(name);
+//     name = prompt('chawere saxeli an daachire enters');
+// }
+// if (names.length > 0) {
+//     let randomIndex = Math.floor(Math.random() * names.length);
+//     let winner = names[randomIndex];
+//     console.log(`gamarjvebuli: ${winner}`);
+// } else {
+//     console.log('saxeli ar chawerila');
+// }
 
 // ### პროექტი 56 - Outdated - ვადაგასული
 
@@ -304,3 +313,11 @@
 
 // - შემთხვევითობის პრინციპით დასადგენად, გამოიყნეთ შესაბამისი ბიბლიოთეკა.
 // - გააკეთეთ input-ის ვალიდაცია და დაყავით კოდი ფუნქციებად.
+// const date = prompt('enter the date with month-day-year like this    ')
+// function transformDate(date) {
+//     const [month, day, year] = date.split('-');
+//     return `${year}-${month}-${day}`;
+// }
+
+// const transformedDate = transformDate(date);
+// console.log(transformedDate);
